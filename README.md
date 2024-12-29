@@ -8,9 +8,9 @@ This analysis aims to apply machine learning techniques to understand and catego
 The dataset used for this analysis is the COVID-19 Severity Index from the Registry of Open Data on AWS. Key columns include Severity Scores: 7 columns, each representing the severity of COVID-19 cases for each hospital over 7 days (from severity_1-day to severity_7-day). Also, Hospital Data: Includes hospital-specific information such as total_deaths_hospital, hospital_name, countyname, statename, and geographical coordinates (latitude, longitude). 
 
 # Methodology
-1.	Data Preprocessing: The severity scores over the 7 days were selected as key features for clustering. Missing data was imputed with the average value for each column to ensure a clean dataset. Also, the severity scores were standardized using StandardScaler to ensure all features had equal importance during the clustering process.
-2.	Clustering with K-Means: The K-Means algorithm was applied to group hospitals based on the severity scores. The optimal number of clusters was determined using the Elbow Method, which suggested three distinct clusters (Muhtasim, 2023).
-3.	Dimensionality Reduction with PCA: To better visualize the clusters, Principal Component Analysis (PCA) was used to reduce the data to two dimensions. This allowed us to plot the clusters and observe how hospitals grouped based on the severity scores.
+-   1.	Data Preprocessing: The severity scores over the 7 days were selected as key features for clustering. Missing data was imputed with the average value for each column to ensure a clean dataset. Also, the severity scores were standardized using StandardScaler to ensure all features had equal importance during the clustering process.
+-   2.	Clustering with K-Means: The K-Means algorithm was applied to group hospitals based on the severity scores. The optimal number of clusters was determined using the Elbow Method, which suggested three distinct clusters (Muhtasim, 2023).
+-   3.	Dimensionality Reduction with PCA: To better visualize the clusters, Principal Component Analysis (PCA) was used to reduce the data to two dimensions. This allowed us to plot the clusters and observe how hospitals grouped based on the severity scores.
    
 # Results - 
 The analysis revealed three distinct clusters of hospitals based on their severity scores over 7 days:
